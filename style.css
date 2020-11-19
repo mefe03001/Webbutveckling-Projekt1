@@ -1,0 +1,20 @@
+.container {/* Rad skriven av Melvin */
+/*Denna är tänkt som huvudgrid på för sidorna, men eftersom att jag inte har sätt wireframen vet jag inte hur sidan ska se ut och jag kan därmed inte börja på layouten. //Melvin*/
+	display: grid;/* Rad skriven av Melvin */
+	grid-template-columns: ?;
+	grid-template-rows: ?;
+}
+header {/* Rad skriven av Melvin */
+	grid-area: ? / ? / ? / ?;
+}
+nav {/* Rad skriven av Melvin */
+	grid-area: ? / ? / ? / ?;
+
+}
+main {/* Rad skriven av Melvin */
+	grid-area: ? / ? / ? / ?;
+
+}
+footer {/* Rad skriven av Melvin */
+	grid-area: ? / ? / ? / ?;
+}
