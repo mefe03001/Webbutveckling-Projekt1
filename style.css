@@ -1,20 +1,145 @@
-.container {/* Rad skriven av Melvin */
-/*Denna är tänkt som huvudgrid på för sidorna, men eftersom att jag inte har sätt wireframen vet jag inte hur sidan ska se ut och jag kan därmed inte börja på layouten. //Melvin*/
-	display: grid;/* Rad skriven av Melvin */
-	grid-template-columns: ?;
-	grid-template-rows: ?;
+/*Gäller över alla sidorna*/
+html {
+font-family: "Consolas";
+color: white;
 }
-header {/* Rad skriven av Melvin */
-	grid-area: ? / ? / ? / ?;
-}
-nav {/* Rad skriven av Melvin */
-	grid-area: ? / ? / ? / ?;
 
-}
-main {/* Rad skriven av Melvin */
-	grid-area: ? / ? / ? / ?;
 
+
+/* En klass som innehåller sidans huvudgrid och lite andra egenskaper */
+.container {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background: darkblue;
 }
-footer {/* Rad skriven av Melvin */
-	grid-area: ? / ? / ? / ?;
+
+
+/* Denna gridklassen är tänkt för användning i den globala menyn */
+.globalNavGrid {
+	display: grid;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+
+/* Denna gridklassen är tänkt för användning i den lokala menyn */
+.lokalNavGrid {
+	display: grid;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+
+/* Detta är Media Queries, något som inte gåtts igenom under lektionerna, Tim sade dock att det var okej att använda till det vi skulle. På länk nedan kan det läsas mer om det. */
+/* https://www.w3schools.com/css/css3_mediaqueries.asp */
+/* Media Queries används på sidan för att den ska vara responsiv; så att menyknapparna stackas på höjden istället för bredden i menyerna, på enheter med en skärmbredd mindre än 750 px (telefon)*/
+@media only screen and (max-width: 750px){ 
+	.globalNavGrid {
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	.lokalNavGrid {
+	grid-template-rows: 1fr 1fr;
+	}
+}
+
+
+/* Ovanliggande kommentar gäller även här, bara det att denna används för att visa vilka egenskaper som ska aktiveras på sidan när den används på enheter med skärmbredden 750px eller mer (dator). */
+@media only screen and (min-width: 750px){
+	.container {
+	padding: 20px;
+	border-radius: 20px;
+	border-style: solid;
+	}
+	html {
+	background-color: #8B0000;
+	}
+	.globalNavGrid {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.lokalNavGrid {
+	grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+/*Typselektor för header*/
+header {
+	grid-area: 1 / 2;
+}
+
+
+/* Barnselektor som anger olika egenskaper för sidan huvudtitel */
+header > h1 {
+	background-color: gray;
+	text-align: center;
+	outline: 5px solid white;
+	padding: 10px;
+}
+
+
+/* Barnselektor som anger olika egenskaper för sidan navigationstiteln som anger vilken sidan man just nu befinner sig på */
+header > h2 {
+	background-color: gray;
+	text-align: center;
+	outline: 5px solid white;
+}
+
+
+/*Typselektor för nav*/
+nav {
+	grid-area: 2 / 2;
+	text-align: center;
+	list-style: none;
+	text-align: center;
+	font-size: 200%;
+}
+
+
+
+nav > ul.globalNavGrid > li {
+	background-color: gray;
+	outline: 5px solid black;
+	text-decoration: none;
+	padding: 5px;
+}
+
+
+
+nav > ul.lokalNavGrid > li {
+	background-color: gray;
+	outline: 5px solid black;
+	text-decoration: none;
+	padding: 5px;
+}
+
+
+
+nav>ul>li>a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+main {
+	grid-area: 3 / 2;
+	background-color: gray;
+	outline: 5px solid white;
+	padding: 10px;
+}
+
+
+
+footer {
+	grid-area: 4 / 2;
+	background-color: gray;
+	outline: 5px solid white;
+	padding: 10px;
 }
