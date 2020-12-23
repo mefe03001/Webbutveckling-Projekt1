@@ -4,10 +4,12 @@
 
   <head>
 	<meta charset="utf-8">
+	<!--Referar till css:en så att sidan vet hur den ska se ut-->
 	<link href = "style.css" rel = "stylesheet">
-	<title>Kontakta Oss - Äldre Nördarnas Nördsida</title>
+	<title>Annat - Äldre Nördarnas Nördsida</title>
   </head>
   
+  <!--Klassen container skiljer på den röda och blåa ytan på sidan i css:en-->
   <body class="container">
     <header>
       <h1>
@@ -18,24 +20,30 @@
       </h2>
     </header>
     <nav>
+      <!--Klassen globalNavGrid gör gridden till den globala menyn i css:en-->
       <ul class = "globalNavGrid">
+        <!--Globala menyn-->
         <li><a href = "index.html" title="Klicka för att komma till Startsidan.">Startsida</a></li>
         <li><a href = "datorer.html" title="Klicka för att komma till sidan Datorer.">Datorer</a></li>
         <li><a href = "spelkonsoller.html" title="Klicka för att komma till sidan Spelkonsoller.">Spelkonsoller</a></li>
         <li><a href = "annat.html" title="Klicka för att komma till sidan Annat.">Annat</a></li>
       </ul>
+      <!--Klassen lokalNavGrid gör gridden till den lokala menyn i css:en-->
       <ul class = "lokalNavGrid">
+        <!--Lokala menyn-->
         <li><a href = "omOss.html" title="Klicka för att komma till sidan Om Oss.">Om Oss</a></li>
         <li><a href = "kontaktaOss.html" title="Klicka för att komma till sidan Kontakta Oss.">Kontakta Oss</a></li>
       </ul>
     </nav>
     <main>
+      <!--Varje p gör så att det blir en ny rad och separerar de texter som ska ha klassen email från de som inte ska ha det-->
       <p>
         På denna sidan står våra mejl-adresser men vi garanterar inte att vi svarar inom en viss tid. Kolla gärna igenom om oss sidan och annat sidan innan ni mejlar.
       </p>
       <p>
         Jakob:
       </p>
+      <!--Klassen email gör så att mailadresserna får annan färg och blir understrukna i css:en-->
       <p class="email">
         jafr03002@utb.vaxjo.se
       </p>

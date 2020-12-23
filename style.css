@@ -142,9 +142,11 @@ footer {
 	outline: 5px solid white;
 	padding: 10px;
 }
+/*Av Elias*/
 /*Klass för emailadresserna i kontakta oss*/
 .email {
   color: black;
   text-decoration: underline;
   text-decoration-color: white;
+/*Inte längre av Elias*/
 }
