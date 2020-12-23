@@ -40,7 +40,7 @@ color: white;
 /* Detta är Media Queries, något som inte gåtts igenom under lektionerna, Tim sade dock att det var okej att använda till det vi skulle. På länk nedan kan det läsas mer om det. */
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */
 /* Media Queries används på sidan för att den ska vara responsiv; så att menyknapparna stackas på höjden istället för bredden i menyerna, på enheter med en skärmbredd mindre än 750 px (telefon)*/
-@media only screen and (max-width: 750px){ 
+@media only screen and (max-width: 750px){
 	.globalNavGrid {
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
@@ -97,7 +97,6 @@ nav {
 	grid-area: 2 / 2;
 	text-align: center;
 	list-style: none;
-	text-align: center;
 	font-size: 200%;
 }
 
@@ -142,4 +141,10 @@ footer {
 	background-color: gray;
 	outline: 5px solid white;
 	padding: 10px;
+}
+/*Klass för emailadresserna i kontakta oss*/
+.email {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
