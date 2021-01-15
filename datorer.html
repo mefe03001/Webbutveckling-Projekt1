@@ -1,26 +1,63 @@
 <!--Sida skriven av Melvin-->
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-	<meta charset="utf-8">
-	<title>Datorer - Äldre Nördarnas Nördsida</title>
-	<link href="style.css" rel="stylesheet">
-</head>
-<body class="container">
-	<header>
-		<h1>Äldre Nördarnas Nördsida</h1>
-		<h2>Datorer</h2>
-	</header>
-	<nav>
-		<ul class="globalNavGrid">
-			<li><a href="index.html" title="Klicka för att komma till Startsidan">Startsida</a></li>
-			<li><a href="datorer.html" title="Klicka för att komma till sidan Datorer">Datorer</a></li>
-			<li><a href="spelkonsoller.html" title="Klicka för att komma till sidan Spelkonsoler">Spelkonsoler</a></li>
-			<li><a href="annat.html" title="Klicka för att komma till sidan Annat">Annat</a></li>
-		</ul>
-	</nav>
-	<main>
-		<p>På denna sidan kommer du kunna läsa om gamla datorer och saker relaterade till datorer.</p>
+<!DOCTYPE html><!--Visar att sidan är i HTML5-->
+<html lang="sv"><!--början av HTML-dokumentet som även visar att språket på sidan är svenska, vilket är nödvändigt om någon ska använda ett uppläsningsverktyg-->
+<head><!--början av taggen head-->
+	<meta charset="utf-8"><!--Visar att sidan är i teckenkodningen UTF-8-->
+	<title>Datorer - Äldre Nördarnas Nördsida</title><!--Säger till webbläsaren vad titeln i fliken ska vara-->
+	<link href="style.css" rel="stylesheet"><!--En länk till css-dokumentet vilket används för styling till sidan.-->
+</head><!--heads sluttagg-->
+<body><!--Början av taggen body-->
+	<header><!--starttagg för header, där sidhuvudet på sidan ska läggas-->
+		<h1>Äldre Nördarnas Nördsida</h1><!--Heading 1 tagg för namn för alla sidorna-->
+		<h2>Datorer</h2><!--Heading 2 tagg för namn för den sidan du nu befinner sig på-->
+	</header><!--sluttagg för header-->
+	<nav><!--starttagg för nav, där navigationslänkar på sidan ska läggas-->
+		<ul class="globalNavGrid"><!--En punktlista med klassen globalNavGrid-->
+			<li><a href="index.html" title="Klicka för att komma till Startsidan">Startsida</a></li><!--listobjekt med länk till startsidan-->
+			<li><a href="datorer.html" title="Klicka för att komma till sidan Datorer">Datorer</a></li><!--listobjekt med länk till datorer-->
+			<li><a href="spelkonsoler.html" title="Klicka för att komma till sidan Spelkonsoler">Spelkonsoler</a></li><!--listobjekt med länk till spelkonsoler-->
+			<li><a href="annat.html" title="Klicka för att komma till sidan Annat">Annat</a></li><!--listobjekt med länk till annat-->
+		</ul><!--sluttagg för punktlista-->
+	</nav><!--sluttagg för navigering-->
+	<main><!--starttagg för main vilket är huvudinnehållet på sidan-->
+		<p>På denna sidan kommer du att kunna läsa om gamla datorer och gamla operativsystem.</p><!--Paragraftagg med text i-->
+		<h2>Datormodeller</h2><!--Heading 2 för rubrik om vad underliggande taggar kommer att handla om-->
+		<img src="datorer.png" alt="Bild på olika datorer från 80-talet" title="Bild på olika datorer från 80-talet"><!--Länk till bild som visas på sidan. Title används för att beskriva bilden om man bara håller över den. Alt används för att beskriva bilden om den inte är tillgänglig, det används också för att beskriva en bild om man använder ett uppläsningverktyg-->
+		<p>Dessa datorerna är några av de kändaste datorerna från 80-talet.</p><!--Paragraftagg med text i-->
+		<h3>IBM Personal Computer</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>IBM släppte denna datorn 1981, den blev en av de mest använda datorerna under 1980-talet.</p><!--Paragraftagg med text i-->
+		<h3>Apple II</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Apple II släpptes 1977 och var Apples första massproducerade dator. Datorn använder sig av 8-bitars processorarkitektur.</p><!--Paragraftagg med text i-->
+		<h3>Commodore 64</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Commodore 64 släpptes 1982 och producerades ända till 1994, och är med i Guinness World Records för mest sålda datorn någonsin. Commodore 64an använde sig av en 8-bitars processorarkitektur och hade 64 KB minne, därav namnet. Commodore 64 hade som många andra datorer under tiden en version av BASIC-programmeringsspråket som gjorde att man lätt både kunde skriva egna program och använda andras program lätt. Till datorn fanns många tillbehör såsom diskettläsare och kassettläsare för lagring av programvara eftersom att datorn bara hade kunde ha saker i minne när den var igång. Det fanns även musar och joystickar som bland annat kunde användas till spel.</p><!--Paragraftagg med text i-->
+		<h3>Commodore Amiga</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Amigan släpptes 1985 och var en hemdator men även en spelkonsol. Datorn använde sig av 32-bitars arkitektur, vilket möjliggjorde för datorn att ha 256 KB ram. </p><!--Paragraftagg med text i-->
+		<img src="operativsystem.png" alt="Bild på olika operativsystems-ikoner" title="Bild på olika operativsystem-ikoner"><!--Länk till bild som visas på sidan. Title används för att beskriva bilden om man bara håller över den. Alt används för att beskriva bilden om den inte är tillgänglig, det används också för att beskriva en bild om man använder ett uppläsningverktyg-->
+		<h2>Operativsystem</h2><!--Heading 2 för rubrik om vad underliggande taggar kommer att handla om-->
+		<h3>Unix</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Unix är idag mest kännt som en operativsystemsfamilj eftersom att allt ifrån mobiler till serverar använder sig av Linux eller någon av BSDerna som i sig antingen är baserat på Unix eller är Unix-liknande. Men Unix i sig började som ett eget operativsystem.</p><!--Paragraftagg med text i-->
+		<h3>Linux</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Linux är ett Unix-liknande operativsystem först släppt 1991. Linux utväcklades från början av Linus Torvalds och är idag ett av de mest använda operativsystemen på servrar.</p><!--Paragraftagg med text i-->
+		<h3>MS-DOS</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Microsoft Disk Operating System förkortat MS-DOS var ett av de kändaste operativsystem under 80-talet, och var även det som kom installerat på de flesta IBM-datorerna. Den första utgåvan av MS-DOS kom 1981 och den sista kom 2001 som grunden av Microsofts Windows Me.</p><!--Paragraftagg med text i-->
+		<h3>Classic Mac OS</h3><!--Heading 3 för rubrik om vad underliggande taggar kommer att handla om-->
+		<p>Classic Mac OS är det operativsystemet som användes på Apples Macdatorer mellan åren 1984 och 2001 då de gick över till det BSD-baserade Mac OS X.</p><!--Paragraftagg med text i-->
+		<h2>För fortsatt läsning om datorer och dess operativsystem kan du trycka på någon av följade länkar:</h2><!--Heading 2 för rubrik om vad underliggande taggar kommer att handla om-->
+		<a href="https://en.wikipedia.org/wiki/IBM_Personal_Computer" title="Tryck för att komma till Wikipedia-sidan om IBM Personal Computer">Wikipedia-sidan om IBM Personal Computer</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://en.wikipedia.org/wiki/Apple_II" title="Tryck för att komma till Wikipedia-sidan om Apple II">Wikipedia-sidan om Apple II</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://en.wikipedia.org/wiki/Commodore_64" title="Tryck för att komma till Wikipedia-sidan om Commodore 64">Wikipedia-sidan om Commodore 64</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://en.wikipedia.org/wiki/Amiga" title="Tryck för att komma till Wikipedia-sidan om Amiga">Wikipedia-sidan om Amiga</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://sv.wikipedia.org/wiki/Unix" title="Tryck för att komma till Wikipedia-sidan om Unix">Wikipedia-sidan om Unix</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://en.wikipedia.org/wiki/Linux" title="Tryck för att komma till Wikipedia-sidan om Linux">Wikipedia-sidan om Linux</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://en.wikipedia.org/wiki/MS-DOS" title="Tryck för att komma till Wikipedia-sidan om MS-DOS">Wikipedia-sidan om MS-DOS</a><!--Tryckbar länk-->
+		<br><!--Hoppar ned en rad-->
+		<a href="https://en.wikipedia.org/wiki/Classic_Mac_OS" title="Tryck för att komma till Wikipedia-sidan om Classic Mac OS">Wikipedia-sidan om Classic Mac OS</a>
 	</main>
 	<footer>
 		<p>Äldre Nördarnas Nördsida del av PRO:s 90+ klubb.</p>
